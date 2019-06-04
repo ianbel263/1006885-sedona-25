@@ -3,10 +3,136 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+		<div class="container">
+			<header class="main-header">
+				<nav class="main-navigation">
+					<a class="logo-link">
+						<img src="http://dummyimage.com/140x71/4d494d/686a82.gif&text=placeholder+image" alt="Логотип Седона">
+					</a>
+					<ul class="main-menu">
+						<li class="main-menu-item main-menu-item-left"><a href="#">Информация</a></li>
+						<li class="main-menu-item main-menu-item-left"><a href="#">Фото и видео</a></li>
+						<li class="main-menu-item main-menu-item-right"><a href="#">Карта штата</a></li>
+						<li class="main-menu-item main-menu-item-right"><a href="hotels.html">Гостиницы</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<div class="banner-main">
+					<img class="welcome-img" src="http://dummyimage.com/459x353/4d494d/686a82.gif&text=placeholder+image" alt="Добро пожаловать в Седону!">
+				</div>
+				<h1 class="page-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+				<section class="reasons">
+					<h2 class="visually-hidden">Причины посещения Седоны</h2>
+					<p class="reasons-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+					<ul class="reasons-list">
+						<li class="reason-item">
+							<h3>Настоящий городок</h3>
+							<span>— №1 —</span>
+							<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+						</li>
+						<li>
+							<h3 class="visually-hidden">Преимущества посещения Седоны</h3>
+							<ul class="features-list">
+								<li class="feature-item">
+									<h4>Жильё</h4>
+									<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+								</li>
+								<li class="feature-item">
+									<h4>Еда</h4>
+									<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+								</li>
+								<li class="feature-item">
+									<h4>Сувениры</h4>
+									<p>Не только китайского, но и местного производства!</p>
+								</li>
+							</ul>
+						</li>
+						<li class="reasons-item">
+							<h3>Там есть Мост дьявола</h3>
+							<span>— №2 —</span>
+							<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+						</li>
+						<li class="reasons-item">
+							<h3>Небольшая площадь</h3>
+							<span>— №3 —</span>
+							<p>Все достопримечательности находятся очень близко</p>
+						</li>
+						<li class="reasons-item">
+							<h3>Красивая дорога</h3>
+							<span>— №4 —</span>
+							<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+						</li>
+						<li class="reasons-item">
+							<h3>Мало туристов</h3>
+							<span>— №5 —</span>
+							<p>Большинство едет в гранд каньон и толпится там</p>
+						</li>
+					</ul>
+				</section>
+				<section class="hotel-search">
+					<h2>Заинтересовались?</h2>
+					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					<a class="btn" href="#">Поиск гостиницы в Седоне</a>					
+				</section>
+				<section class="map">
+					<img class="map-img" src="http://dummyimage.com/1200x593/4d494d/686a82.gif&text=placeholder+image" alt="Наш город на пересечении 89А и 179 шоссе">
+				</section>
+			</main>
+			<footer class="main-footer">
+				<b>#visitSedona</b>
+				<ul>
+					<li>
+						<a class="social-btn" href="#">Твиттер</a>
+					</li>
+					<li>
+						<a class="social-btn" href="#">Фейсбук</a>
+					</li>
+					<li>
+						<a class="social-btn" href="#">Ю-тьюб</a>
+					</li>
+				</ul>
+				<div class="copyright">
+					<b>Website by</b>
+					<a href="#"><img src="http://dummyimage.com/115x41/4d494d/686a82.gif&text=placeholder+image" alt="Логотип HTML Academy"></a>
+				</div>
+			</footer>
+			<section class="modal">
+				<form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+					<ul class="form-fields-list">
+						<li class="form-field">
+							<label for="arrival-date">Дата заезда:</label>
+							<input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017"> <!-- вставить кнопки календаря в поля форм -->
+						</li>
+						<li class="form-field">
+							<label for="departure-date">Дата выезда:</label>
+							<input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017">
+						</li>
+						<li class="form-field form-field-visitors">
+							<ul class="visitors-amount-fields-list">
+								<li class="visitors-amount-field">
+									<label for="adult-amount">Взрослые:</label>
+									<button class="btn-minus" type="button">-</button>
+									<input type="text" name="adult-amount" id="adult-amount" value="2">
+									<button class="btn-plus" type="button">+</button>
+								</li>
+								<li class="visitors-amount-field">
+									<label for="child-amount">Дети:</label>
+									<button class="btn-minus" type="button">-</button>
+									<input type="text" name="child-amount" id="child-amount" value="0">
+									<button class="btn-plus" type="button">+</button>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<button class="btn" type="submit">Найти</button>
+				</form>
+			</section>
+		</div>
   </body>
 </html>
