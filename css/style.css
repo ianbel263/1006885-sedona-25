@@ -142,8 +142,10 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top -85px center;
   border-top: 1px solid transparent;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .banner-main .welcome-img {
@@ -232,8 +234,6 @@ input[type="radio"].visually-hidden {
 
 .reason-item p {
   margin: 0;
-
-  //margin-bottom: 15px;
 }
 
 .features-list {
@@ -513,14 +513,37 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0,1,1,0.15);
-  /*transform: translateX(-50%)  translateY(-50%)   scaleY(0);
-  transition: 0.3s;*/
+  transform: translateX(-50%)  translateY(-50%)   scaleY(0);
+
+  transition: 0.3s;
+}
+
+.modal-show {
   transform: translateX(-50%)  translateY(0px) scaleY(1);
 }
 
-/*.modal-show {
+@keyframes color-change {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    background-color: #ffffff;
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    background-color: #ff0000;
+  }
 }
-*/
+
+.modal-error {
+  animation: color-change 0.3s;
+}
+
 .modal .form-fields-list {
   margin: 0;
   padding: 0;
@@ -617,26 +640,20 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
-.visitors-amount-field label {
-  position: relative;
-
-  margin-right: 37px;
-}
-
 .visitors-amount-field:last-child label {
   margin-right: 0;
 }
 
 .visitors-amount-field input[type="text"] {
   width: 114px;
-  margin-left: 37px;
+  margin-left: 40px;
   padding: 7px 38px;
 
   text-align: center;
 }
 
 .visitors-amount-field:last-child input[type="text"] {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .visitors-amount-field .amount-btn {
@@ -1110,12 +1127,11 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .item-description .title-link:hover,
-.item-description .title-link:focus
- {
+.item-description .title-link:focus {
   color: #81b3d2;
 }
 
-.item-description .title-link:active{
+.item-description .title-link:active {
   color: rgba(0,0,0,0.3);
 }
 
