@@ -30,6 +30,10 @@ main {
   width: 100%;
 
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
           box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -74,7 +78,13 @@ input[type="radio"].visually-hidden {
   display: block;
 
   -webkit-transform: translate(-50%,0);
+<<<<<<< HEAD
       -ms-transform: translate(-50%,0);
+=======
+
+      -ms-transform: translate(-50%,0);
+
+>>>>>>> master
           transform: translate(-50%,0);
 }
 
@@ -83,11 +93,20 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+=======
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 56px;
+>>>>>>> master
   margin: 0 72px;
   padding: 0;
 
@@ -161,6 +180,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
   background-position: top -85px center;
+<<<<<<< HEAD
+=======
+  border-top: 1px solid transparent;
+>>>>>>> master
   background-size: cover;
   border-top: 1px solid transparent;
 }
@@ -269,6 +292,10 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   -webkit-box-sizing: border-box;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
           box-sizing: border-box;
   width: 400px;
   min-height: 330px;
@@ -341,14 +368,23 @@ input[type="radio"].visually-hidden {
   height: 256px;
 
   -o-object-fit: cover;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
      object-fit: cover;
 }
 
 .reason-item-fullsize:nth-child(3) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
+<<<<<<< HEAD
   -ms-flex-direction: row-reverse;
       flex-direction: row-reverse;
+=======
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+>>>>>>> master
 }
 
 .hotel-booking {
@@ -433,6 +469,7 @@ input[type="radio"].visually-hidden {
   bottom: 0;
 
   display: -webkit-box;
+<<<<<<< HEAD
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -441,6 +478,18 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
+=======
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+>>>>>>> master
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -470,8 +519,13 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
+<<<<<<< HEAD
   -ms-flex-pack: center;
   justify-content: center;
+=======
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> master
   width: 240px;
   margin: 0;
   padding: 0;
@@ -497,11 +551,19 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+<<<<<<< HEAD
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
+=======
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+>>>>>>> master
   width: 100%;
   height: 100%;
 
@@ -523,11 +585,19 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+<<<<<<< HEAD
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
+=======
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+>>>>>>> master
   width: 240px;
 
   -ms-align-items: center;
@@ -561,6 +631,10 @@ input[type="radio"].visually-hidden {
   left: 50%;
 
   -webkit-box-sizing: border-box;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
           box-sizing: border-box;
   width: 568px;
   padding: 55px;
@@ -571,6 +645,13 @@ input[type="radio"].visually-hidden {
   -webkit-transform: translateX(-50%)  translateY(-50%)   scaleY(0);
       -ms-transform: translateX(-50%)  translateY(-50%)   scaleY(0);
           transform: translateX(-50%)  translateY(-50%)   scaleY(0);
+<<<<<<< HEAD
+=======
+
+  -webkit-transition: 0.3s;
+
+  -o-transition: 0.3s;
+>>>>>>> master
 
   -webkit-transition: 0.3s;
        -o-transition: 0.3s;
@@ -631,6 +712,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+<<<<<<< HEAD
 .modal-booking-form .form-field {
   position: relative;
 
@@ -649,6 +731,9 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-booking-form input[type="text"] {
+=======
+.modal input[type="text"] {
+>>>>>>> master
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 38px;
@@ -670,6 +755,31 @@ input[type="radio"].visually-hidden {
   border: 2px solid #e5e5e5;
 }
 
+<<<<<<< HEAD
+=======
+.form-field {
+  position: relative;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  line-height: 26px;
+  vertical-align: middle;
+  color: #000000;
+}
+
+>>>>>>> master
 .form-field .btn-calendar {
   position: absolute;
   top: 9px;
@@ -703,7 +813,13 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   width: 100%;
+=======
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> master
   margin: 0;
   padding: 0;
 
@@ -714,11 +830,21 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: -webkit-box;
+<<<<<<< HEAD
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
+=======
+
+  display: -ms-flexbox;
+
+  display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+>>>>>>> master
 
   -ms-align-items: center;
 }
@@ -929,11 +1055,21 @@ input[type="checkbox"]:checked:disabled + label::before {
   position: relative;
 
   display: -webkit-box;
+<<<<<<< HEAD
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+=======
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> master
   width: 314px;
   height: 32px;
 
@@ -981,6 +1117,10 @@ input[type="checkbox"]:checked:disabled + label::before {
   position: relative;
 
   -webkit-box-sizing: border-box;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
           box-sizing: border-box;
   width: 318px;
   height: 43px;
@@ -1008,6 +1148,10 @@ input[type="checkbox"]:checked:disabled + label::before {
   z-index: 1;
 
   -webkit-box-sizing: border-box;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
           box-sizing: border-box;
   width: 20px;
   height: 20px;
@@ -1034,7 +1178,13 @@ input[type="checkbox"]:checked:disabled + label::before {
   height: 22px;
 
   -webkit-transform: translate(-1px,-1px);
+<<<<<<< HEAD
       -ms-transform: translate(-1px,-1px);
+=======
+
+      -ms-transform: translate(-1px,-1px);
+
+>>>>>>> master
           transform: translate(-1px,-1px);
 }
 
@@ -1062,7 +1212,13 @@ input[type="checkbox"]:checked:disabled + label::before {
   position: relative;
 
   display: -webkit-box;
+<<<<<<< HEAD
   display: -ms-flexbox;
+=======
+
+  display: -ms-flexbox;
+
+>>>>>>> master
   display: flex;
   padding: 30px 0;
 }
@@ -1092,9 +1248,15 @@ input[type="checkbox"]:checked:disabled + label::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
+=======
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+>>>>>>> master
   margin-left: auto;
 
   -ms-align-items: center;
@@ -1113,9 +1275,15 @@ input[type="checkbox"]:checked:disabled + label::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
+=======
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+>>>>>>> master
   width: 776px;
   margin: 0;
   padding: 0;
@@ -1164,8 +1332,13 @@ input[type="checkbox"]:checked:disabled + label::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
   -ms-flex-pack: justify;
   justify-content: space-between;
+=======
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> master
   width: 35px;
   height: 16px;
   margin: 0;
@@ -1195,11 +1368,21 @@ input[type="checkbox"]:checked:disabled + label::before {
   position: relative;
 
   display: -webkit-box;
+<<<<<<< HEAD
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+=======
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+>>>>>>> master
   padding: 26px 0 30px;
 }
 
@@ -1254,8 +1437,13 @@ input[type="checkbox"]:checked:disabled + label::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
   -ms-flex-pack: justify;
   justify-content: space-between;
+=======
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> master
   width: 180px;
   margin: 0;
   margin-bottom: 13px;
@@ -1270,6 +1458,7 @@ input[type="checkbox"]:checked:disabled + label::before {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
   -ms-flex-direction: column;
       flex-direction: column;
   -webkit-box-pack: justify;
@@ -1277,6 +1466,15 @@ input[type="checkbox"]:checked:disabled + label::before {
   justify-content: space-between;
   -ms-flex-item-align: stretch;
   align-self: stretch;
+=======
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+>>>>>>> master
   margin-left: auto;
 }
 
@@ -1286,8 +1484,13 @@ input[type="checkbox"]:checked:disabled + label::before {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
+<<<<<<< HEAD
   -ms-flex-direction: row-reverse;
       flex-direction: row-reverse;
+=======
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+>>>>>>> master
   margin: 0;
   padding: 3px 0;
 
