@@ -422,15 +422,39 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.map-img {
-  display: block;
+.map {
+  position: relative;
+
   width: 1200px;
   height: 594px;
+}
+
+.map-img,
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1200px;
+  height: 594px;
+
+  border: none;
+}
+
+.map-img {
+  z-index: 0;
+
+  display: block;
+}
+
+.map iframe {
+  z-index: 1;
 }
 
 .main-footer {
   position: absolute;
   bottom: 0;
+  z-index: 5;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -559,6 +583,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: 5;
 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
