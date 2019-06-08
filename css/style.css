@@ -1047,7 +1047,8 @@ input[type="checkbox"]:checked:disabled + label::before {
   border: 2px solid #ffffff;
 }
 
-.search-form .btn:hover {
+.search-form .btn:hover,
+.search-form .btn:focus {
   color: #000000;
 
   background-color: #ffffff;
@@ -1153,7 +1154,8 @@ input[type="checkbox"]:checked:disabled + label::before {
   border-bottom: none;
 }
 
-.sorting-link-current a {
+.sorting-link-current a,
+.sorting-link-current a:hover {
   color: #81b3d2;
 
   border-bottom: none;
@@ -1180,7 +1182,8 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .sort-btn:active path,
-.sort-btn-current path {
+.sort-btn-current path,
+.sort-btn-current:hover path {
   fill: #81b3d2;
 }
 
