@@ -7,7 +7,7 @@ var dateDeparture = popup.querySelector('[name=departure-date]');
 btnModal.addEventListener('click', function(evt) {
 	evt.preventDefault();
 	popup.classList.toggle('modal-show');
-	dateArrival.focus();
+	//dateArrival.focus();
 });
 
 window.addEventListener('keydown', function(evt) {
