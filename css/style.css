@@ -513,9 +513,14 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0,1,1,0.15);
-  transform: translate(-50%,0);
+  /*transform: translateX(-50%)  translateY(-50%)   scaleY(0);
+  transition: 0.3s;*/
+  transform: translateX(-50%)  translateY(0px) scaleY(1);
 }
 
+/*.modal-show {
+}
+*/
 .modal .form-fields-list {
   margin: 0;
   padding: 0;
@@ -525,11 +530,13 @@ input[type="radio"].visually-hidden {
 
 .modal input[type="text"] {
   box-sizing: border-box;
-  background-color: #f2f2f2;
-  border: none;
   height: 38px;
+
   font: inherit;
   text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: none;
 }
 
 .modal input[type="text"]:hover {
@@ -543,6 +550,7 @@ input[type="radio"].visually-hidden {
 
 .form-field {
   position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -558,20 +566,22 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 9px;
   right: 9px;
+
   width: 21px;
   height: 22px;
   padding: 0;
+
+  background-color: transparent;
   border: none;
   cursor: pointer;
-  background-color: transparent;
 }
 
 .btn-calendar:hover path,
-.btn-calendar:focus path{
+.btn-calendar:focus path {
   fill: #000000;
 }
 
-.btn-calendar:active path{
+.btn-calendar:active path {
   fill: #81b3d2;
 }
 
@@ -596,9 +606,11 @@ input[type="radio"].visually-hidden {
 
 .visitors-amount-field {
   position: relative;
+
   display: flex;
+      align-items: center;
+
   -ms-align-items: center;
-  align-items: center;
 }
 
 .visitors-amount-field:last-child {
@@ -607,6 +619,7 @@ input[type="radio"].visually-hidden {
 
 .visitors-amount-field label {
   position: relative;
+
   margin-right: 37px;
 }
 
@@ -616,8 +629,8 @@ input[type="radio"].visually-hidden {
 
 .visitors-amount-field input[type="text"] {
   width: 114px;
-  padding: 7px 38px;
   margin-left: 37px;
+  padding: 7px 38px;
 
   text-align: center;
 }
@@ -626,73 +639,59 @@ input[type="radio"].visually-hidden {
   margin-left: 20px;
 }
 
-.visitors-amount-field .amount-btn{
+.visitors-amount-field .amount-btn {
   position: absolute;
-  border: none;
-  background-color: transparent;
+  top: 0;
+  right: 0;
+
   width: 38px;
   height: 38px;
-  right: 0;
-  top: 0;
   padding: 0;
+
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
-.visitors-amount-field .amount-btn-minus{
+.visitors-amount-field .amount-btn-minus {
   right: 76px;
 }
 
-.visitors-amount-field .amount-btn-minus::before {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+.visitors-amount-field .amount-btn::before {
   content: "";
-  width: 12px;
-  height: 3px;
-  background-color: #a9a9a9;
-  transform: translate(-50%,-50%);
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-.visitors-amount-field .amount-btn-plus::before {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  content: "";
   width: 12px;
   height: 3px;
+
   background-color: #a9a9a9;
   transform: translate(-50%,-50%);
 }
 
 .visitors-amount-field .amount-btn-plus::after {
-  position: absolute;
-  left: 50%;
-  top: 50%;
   content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
   width: 3px;
   height: 12px;
+
   background-color: #a9a9a9;
   transform: translate(-50%,-50%);
 }
 
-.visitors-amount-field .amount-btn-minus:hover::before,
-.visitors-amount-field .amount-btn-minus:focus::before
-{
-  background-color: red;
-}
-
-/*.visitors-amount-field .amount-btn-minus:hover::before,
-.visitors-amount-field .amount-btn-minus:focus::before,*/
-.visitors-amount-field .amount-btn-plus:hover::before,
-.visitors-amount-field .amount-btn-plus:focus::before,
-.visitors-amount-field .amount-btn-plus:hover::after,
-.visitors-amount-field .amount-btn-plus:focus::after{
+.visitors-amount-field .amount-btn:hover::before,
+.visitors-amount-field .amount-btn:focus::before,
+.visitors-amount-field .amount-btn:hover::after,
+.visitors-amount-field .amount-btn:focus::after {
   background-color: #000000;
 }
 
-.visitors-amount-field .amount-btn-minus:active::before,
-.visitors-amount-field .amount-btn-plus:active::before,
-.visitors-amount-field .amount-btn-plus:active::after{
+.visitors-amount-field .amount-btn:active::before,
+.visitors-amount-field .amount-btn:active::after {
   background-color: #81b3d2;
 }
 
@@ -758,8 +757,6 @@ input[type="radio"].visually-hidden {
 .search-form-price:last-child legend {
   margin-bottom: 10px;
 }
-
-
 
 .search-form fieldset:last-child {
   margin-right: 0;
@@ -1106,6 +1103,20 @@ input[type="checkbox"]:checked:disabled + label::before {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+}
+
+.item-description .title-link {
+  color: #000000;
+}
+
+.item-description .title-link:hover,
+.item-description .title-link:focus
+ {
+  color: #81b3d2;
+}
+
+.item-description .title-link:active{
+  color: rgba(0,0,0,0.3);
 }
 
 .item-description .type-and-price {
