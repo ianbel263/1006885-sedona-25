@@ -783,7 +783,8 @@ input[type="radio"].visually-hidden {
   right: 76px;
 }
 
-.visitors-amount-field .amount-btn::before {
+.visitors-amount-field .amount-btn::before,
+.visitors-amount-field .amount-btn-plus::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -799,18 +800,9 @@ input[type="radio"].visually-hidden {
 }
 
 .visitors-amount-field .amount-btn-plus::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 3px;
-  height: 12px;
-
-  background-color: #a9a9a9;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%) rotate(90deg);
+      -ms-transform: translate(-50%,-50%) rotate(90deg);
+          transform: translate(-50%,-50%) rotate(90deg);
 }
 
 .visitors-amount-field .amount-btn:hover::before,
