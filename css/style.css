@@ -562,18 +562,18 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.copyright a {
+.copyright-link {
   display: block;
   width: 115px;
   height: 41px;
 }
 
-.copyright a:hover path,
-.copyright a:focus path {
+.copyright-link:hover path,
+.copyright-link:focus path {
   fill: #81b3d2;
 }
 
-.copyright a:active path {
+.copyright-link:active path {
   fill: #bdbbbc;
 }
 
@@ -598,8 +598,8 @@ input[type="radio"].visually-hidden {
 
 .modal-open {
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+       -o-transition: 0.3s;
+          transition: 0.3s;
 }
 
 .modal-close {
@@ -855,6 +855,7 @@ input[type="radio"].visually-hidden {
 
   color: #ffffff;
 
+  background-color: #5f7484;
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
