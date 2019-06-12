@@ -16,22 +16,23 @@ a {
   text-decoration: none;
 }
 
-main {
+.page-main {
   background-color: #ffffff;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
-}
-
-.wrapper {
-  width: 100%;
 
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
           box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+
+  //padding: 0 40px;
+  //width: 100%;
 }
+
+/*.wrapper {
+}*/
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -158,6 +159,7 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   height: 508px;
 
+  background-color: #727f89;
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
   background-position: top -85px center;
@@ -259,6 +261,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -593,6 +597,18 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0,1,1,0.15);
           box-shadow: 0 7px 15px 0 rgba(0,1,1,0.15);
+  -webkit-transform: translateX(-50%)  translateY(0px) scaleY(1);
+      -ms-transform: translateX(-50%)  translateY(0px) scaleY(1);
+          transform: translateX(-50%)  translateY(0px) scaleY(1);
+}
+
+.modal-open {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal-close {
   -webkit-transform: translateX(-50%)  translateY(-50%)   scaleY(0);
       -ms-transform: translateX(-50%)  translateY(-50%)   scaleY(0);
           transform: translateX(-50%)  translateY(-50%)   scaleY(0);
@@ -600,12 +616,6 @@ input[type="radio"].visually-hidden {
   -webkit-transition: 0.3s;
        -o-transition: 0.3s;
           transition: 0.3s;
-}
-
-.modal-show {
-  -webkit-transform: translateX(-50%)  translateY(0px) scaleY(1);
-      -ms-transform: translateX(-50%)  translateY(0px) scaleY(1);
-          transform: translateX(-50%)  translateY(0px) scaleY(1);
 }
 
 @-webkit-keyframes color-change {
@@ -683,7 +693,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid transparent;
 }
 
 .modal-booking-form input[type="text"]:hover {
@@ -930,15 +940,15 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label::before {
+.search-form-checkbox:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
-input[type="checkbox"]:disabled + label::before {
+.search-form-checkbox:disabled + label::before {
   background-image: url("../img/checkbox-dis-off.svg");
 }
 
-input[type="checkbox"]:checked:disabled + label::before {
+.search-form-checkbox:checked:disabled + label::before {
   background-image: url("../img/checkbox-dis-on.svg");
 }
 
@@ -1131,6 +1141,8 @@ input[type="checkbox"]:checked:disabled + label::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
@@ -1244,6 +1256,8 @@ input[type="checkbox"]:checked:disabled + label::before {
 .search-result-item .btn {
   padding-top: 3px;
   padding-bottom: 3px;
+
+  font-weight: 700;
 }
 
 .item-description h3 {
